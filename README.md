@@ -2,7 +2,6 @@
 
 # 📊 Project Dashboard
 
-
 ### داشبورد مدیریت پروژه با React Native و Expo
 
 <p align="center">
@@ -81,78 +80,60 @@
 
 نمایش آمار پروژه‌ها:
 
-- تعداد پروژه‌های فعال
-- تعداد پروژه‌های تکمیل شده
-- درصد پیشرفت کلی
-- استفاده از سرور
+```
+12
+در حال انجام
+
+28
+تکمیل شده
+```
+
+این بخش با Card های جداگانه طراحی شده است.
 
 ---
 
-## 📊 نمودارها و آمار
+### Categories
 
-- نمودار میله‌ای پروژه‌ها
-- نمودار دایره‌ای دسته‌بندی‌ها
-- شاخص پیشرفت سرور
+دسته‌بندی پروژه‌ها:
+
+| دسته | تعداد |
+|---|---|
+| طراحی UI | 8 پروژه |
+| توسعه وب | 12 پروژه |
+| موبایل | 5 پروژه |
+| دیزاین سیستم | 3 پروژه |
+
+---
+
+### Server Capacity
+
+نمایش ظرفیت سرور:
+
+```
+70%
+███████░░░
+```
+
+این بخش با Progress Bar ساخته شده است.
 
 ---
 
 ## 🛠 تکنولوژی‌های استفاده شده
 
-- **React Native**
-- **Expo SDK 57**
-- **JavaScript (ES6+)**
-- **React Hooks**
-- **JSX**
-- **StyleSheet**
-- **Flexbox**
+- React Native
+- Expo
+- JavaScript
+- JSX
+- StyleSheet
+- Flexbox Layout
+- React Native Components
 
----
-
-## 📂 ساختار پروژه
-
-```text
-project-dashboard
-
-├── app
-
-├── src
-│   ├── components
-│   │   ├── Header.jsx
-│   │   ├── StatisticsCards.jsx
-│   │   ├── ProjectCategory.jsx
-│   │   ├── ServerCapacity.jsx
-│   │   ├── ProgressBar.jsx
-│   │   └── BottomNavigation.jsx
-│
-│   ├── constants
-│   │   └── colors.js
-│
-│   └── data
-│       └── dashboardData.js
-
-├── assets
-
-├── package.json
-
-└── README.md
-```
-
----
-
-## 🧩 کامپوننت‌های پروژه
-
-| Component | توضیح |
-|------------|-------|
-| Header | نمایش آواتار، عنوان و دکمه تنظیمات |
-| StatisticsCards | کارت‌های آماری |
-| ProjectCategory | دسته‌بندی پروژه‌ها |
-| ServerCapacity | ظرفیت سرور |
-| ProgressBar | نوار پیشرفت |
-| BottomNavigation | منوی ناوبری پایین صفحه |
 
 ---
 
 ## 🚀 ساخت پروژه جدید
+
+ایجاد پروژه Expo:
 
 ```bash
 npx create-expo-app@latest
@@ -161,20 +142,20 @@ npx create-expo-app@latest
 یا:
 
 ```bash
-npx create-expo-app@latest project-dashboard
+npx create-expo-app@latest Project-Dashboard
 ```
 
 ورود به پروژه:
 
 ```bash
-cd project-dashboard
+cd Project-Dashboard
 ```
 
 ---
 
 ## 💻 پیش‌نیازهای نصب
 
-قبل از اجرای پروژه موارد زیر باید نصب باشند:
+قبل از اجرا موارد زیر نیاز است:
 
 - [ ] Node.js (LTS)
 - [ ] npm
@@ -189,32 +170,31 @@ cd project-dashboard
 
 ## ⚙ راه‌اندازی محیط توسعه
 
-برای نصب صحیح React Native از مستندات رسمی استفاده کنید:
+مستندات رسمی React Native:
 
 🔗 [https://reactnative.dev/docs/set-up-your-environment](https://reactnative.dev/docs/set-up-your-environment)
 
-در این مستند نحوه نصب موارد زیر توضیح داده شده است:
+شامل:
 
-- Android Studio
-- Android SDK
-- Java JDK
-- Environment Variables
-- Android Emulator
-- اجرای پروژه روی موبایل
+- نصب Android Studio
+- نصب SDK
+- تنظیم Environment Variables
+- ساخت Emulator
+- اجرای پروژه
 
 ---
 
 ## 📥 دانلود Android Studio
 
-در صورت مشکل در دانلود Android Studio می‌توانید از لینک زیر استفاده کنید.
+در صورت مشکل دانلود:
 
 🔗 [https://soft98.ir/mobile/16739-android-studio.html](https://soft98.ir/mobile/16739-android-studio.html)
 
 ---
 
-## 📦 دانلود آفلاین Android SDK
+## 📦 Android SDK Offline
 
-اگر هنگام دانلود Emulator یا System Image با مشکل مواجه شدید:
+برای دانلود آفلاین System Image:
 
 🔗 [https://androidsdkoffline.blogspot.com/p/android-sysimg-gapi-playstore-ia-x64.html?m=1](https://androidsdkoffline.blogspot.com/p/android-sysimg-gapi-playstore-ia-x64.html?m=1)
 
@@ -230,13 +210,13 @@ npm install
 
 ## ▶ اجرای پروژه
 
-### شروع Development Server
+### اجرای Expo
 
 ```bash
 npx expo start
 ```
 
-### اجرای اندروید
+### اجرای Android
 
 ```bash
 npx expo run:android
@@ -248,7 +228,7 @@ npx expo run:android
 npx expo run:ios
 ```
 
-### پاک کردن کش
+### پاک کردن Cache
 
 ```bash
 npx expo start -c
@@ -256,98 +236,74 @@ npx expo start -c
 
 ---
 
-## 📱 اجرای پروژه روی موبایل
-
-۱. برنامه **Expo Go** را نصب کنید.
-
-۲. دستور زیر را اجرا کنید:
-
-```bash
-npx expo start
-```
-
-۳. QR Code نمایش داده شده را توسط **Expo Go** اسکن کنید.
-
----
-
-## 📦 دستورات پرکاربرد
-
-### نمایش نسخه Node
-
-```bash
-node -v
-```
-
-### نمایش نسخه npm
-
-```bash
-npm -v
-```
-
-### نمایش نسخه Expo
-
-```bash
-npx expo --version
-```
-
-### نصب پکیج
-
-```bash
-npm install package-name
-```
-
-### نصب پکیج مخصوص Expo
-
-```bash
-npx expo install package-name
-```
-
----
-
 ## 🎯 اهداف آموزشی پروژه
 
-در این پروژه با مفاهیم زیر آشنا خواهید شد:
+در این پروژه یاد می‌گیرید:
 
-- React Native
-- Expo
-- JavaScript
-- JSX
-- Component
-- Props
-- State
-- React Hooks
-- useState
-- StyleSheet
-- View
-- Text
-- ScrollView
+- ساخت Dashboard UI
+- طراحی Card Component
+- Flexbox در React Native
 - SafeAreaView
+- ScrollView
 - TouchableOpacity
-- Flexbox
-- طراحی UI داشبورد
+- StyleSheet
 - مدیریت Layout
-- معماری پروژه
-- ساخت کامپوننت‌های قابل استفاده مجدد
+- طراحی Dark Theme
+- ساخت Navigation
 - طراحی Responsive
+
+---
+
+## 🧩 مفاهیم استفاده شده
+
+### Flexbox
+
+برای چیدمان عناصر:
+
+```jsx
+flexDirection: 'row'
+```
+
+برای قرار دادن آیتم‌ها کنار هم استفاده شده است.
+
+### Flex
+
+برای تقسیم فضای مساوی:
+
+```jsx
+flex: 1
+```
+
+در کارت‌های آماری استفاده شده است.
+
+### Grid Layout
+
+برای ساخت دسته‌بندی‌ها:
+
+```jsx
+flexWrap: 'wrap'
+```
+
+استفاده شده است.
 
 ---
 
 ## 🚀 توسعه‌های آینده
 
-- [ ] اتصال به API
-- [ ] دریافت داده‌های واقعی
-- [ ] نمودارهای پیشرفته
-- [ ] حالت Light Mode
+- [ ] اتصال به Backend
+- [ ] سیستم Login
+- [ ] مدیریت واقعی پروژه‌ها
+- [ ] اضافه کردن پروژه جدید
+- [ ] نمودارهای آماری
 - [ ] اعلان‌ها
-- [ ] صفحه جزئیات پروژه
-- [ ] ویرایش پروژه
-- [ ] حالت آفلاین
-- [ ] چندزبانه
-- [ ] انیمیشن‌های پیشرفته
+- [ ] پروفایل کاربر
+- [ ] ذخیره اطلاعات با AsyncStorage
+- [ ] API Integration
+- [ ] حالت Light Mode
 
 ---
 
-## ❗ رفع مشکلات متداول
+## ❗ رفع مشکلات
 
 ### پروژه اجرا نمی‌شود
 
@@ -355,40 +311,31 @@ npx expo install package-name
 npx expo start -c
 ```
 
-### نصب نشدن پکیج‌ها
-
-```bash
-npm install
-```
-
-یا:
+### نصب پکیج مشکل دارد
 
 ```bash
 rm -rf node_modules
 npm install
 ```
 
-### Emulator اجرا نمی‌شود
+### Emulator مشکل دارد
 
-- ✅ فعال بودن Virtualization
-- ✅ نصب Android SDK
-- ✅ نصب Java JDK
-- ✅ ساخت Emulator
-- ✅ استفاده از Android SDK Offline
+بررسی کنید:
+
+- ✅ Virtualization فعال باشد
+- ✅ Android SDK نصب باشد
+- ✅ Java نصب باشد
+- ✅ Emulator ساخته شده باشد
 
 ---
 
 ## 📚 منابع آموزشی
 
-### مستندات React Native
+### React Native
 
 🔗 [https://reactnative.dev/docs](https://reactnative.dev/docs)
 
-### راه‌اندازی محیط توسعه
-
-🔗 [https://reactnative.dev/docs/set-up-your-environment](https://reactnative.dev/docs/set-up-your-environment)
-
-### مستندات Expo
+### Expo
 
 🔗 [https://docs.expo.dev](https://docs.expo.dev)
 
@@ -396,22 +343,25 @@ npm install
 
 ## 🤝 مشارکت
 
-در صورت تمایل می‌توانید پروژه را **Fork** کرده و با ارسال **Pull Request** در توسعه آن مشارکت کنید.
+برای توسعه پروژه:
+
+1. **Fork** کنید
+2. تغییرات خود را اعمال کنید
+3. **Pull Request** ارسال کنید
 
 ---
 
-## 📄 لایسنس
+## 📄 License
 
-این پروژه تحت لایسنس **MIT** منتشر شده است.
+MIT License
 
 ---
 
 <div align="center">
 
 
-⭐ اگر این پروژه برای شما مفید بود، لطفاً به آن **Star** بدهید.
+⭐ اگر پروژه را دوست داشتید **Star** بدهید.
 
 ساخته شده با ❤️ توسط **React Native + Expo**
 
 </div>
-
