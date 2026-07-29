@@ -1,18 +1,19 @@
 <div align="center">
 
-# 🛒 Shop App
+# 📊 Project Dashboard
 
-### اپلیکیشن مدرن فروشگاه اینترنتی با React Native و Expo
+
+### داشبورد مدیریت پروژه با React Native و Expo
 
 <p align="center">
   <img src="https://img.shields.io/badge/React%20Native-Latest-61DAFB?style=for-the-badge&logo=react">
   <img src="https://img.shields.io/badge/Expo-SDK%2057-000020?style=for-the-badge&logo=expo">
   <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript">
-  <img src="https://img.shields.io/badge/UI-Modern-success?style=for-the-badge">
+  <img src="https://img.shields.io/badge/UI-Dashboard-success?style=for-the-badge">
   <img src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS-success?style=for-the-badge">
 </p>
 
-> یک رابط کاربری حرفه‌ای برای فروشگاه اینترنتی که با **React Native** و **Expo** توسعه داده شده است و تمامی بخش‌های اصلی یک فروشگاه آنلاین را شبیه‌سازی می‌کند.
+> یک داشبورد مدیریتی مدرن برای نمایش وضعیت پروژه‌ها که با **React Native** و **Expo** طراحی شده است.
 
 </div>
 
@@ -20,11 +21,28 @@
 
 ## 📖 معرفی پروژه
 
-**Shop App** یک پروژه آموزشی برای یادگیری طراحی رابط کاربری فروشگاه اینترنتی در React Native است.
+**Project Dashboard** یک رابط کاربری مدرن برای مدیریت و نمایش اطلاعات پروژه‌ها است.
 
-در این پروژه با نحوه ساخت صفحات فروشگاهی، نمایش محصولات، دسته‌بندی‌ها، محصولات محبوب، سبد خرید، علاقه‌مندی‌ها و طراحی کامپوننت‌های قابل استفاده مجدد آشنا خواهید شد.
+این پروژه یک داشبورد موبایلی شامل:
 
-رابط کاربری این پروژه با الهام از فروشگاه‌های آنلاین مطرح مانند **Amazon**، **Digikala** و **Alibaba** طراحی شده است.
+- وضعیت پروژه‌ها
+- دسته‌بندی پروژه‌ها
+- ظرفیت سرور
+- آمار کلی
+- Navigation پایین صفحه
+
+است که با هدف یادگیری طراحی UI حرفه‌ای در React Native ساخته شده است.
+
+در این پروژه از کامپوننت‌های اصلی React Native مانند:
+
+- SafeAreaView
+- ScrollView
+- View
+- Text
+- TouchableOpacity
+- StyleSheet
+
+استفاده شده است.
 
 ---
 
@@ -32,46 +50,49 @@
 
 | ویژگی | وضعیت |
 |--------|--------|
-| رابط کاربری مدرن | ✅ |
-| صفحه اصلی فروشگاه | ✅ |
-| نمایش دسته‌بندی محصولات | ✅ |
-| نمایش محصولات محبوب | ✅ |
-| محصول ویژه روز | ✅ |
-| نمایش جزئیات محصول | ✅ |
-| سبد خرید | ✅ |
-| مدیریت تعداد کالا | ✅ |
-| علاقه‌مندی‌ها (Favorites) | ✅ |
-| Navigation پایین صفحه | ✅ |
+| طراحی داشبورد مدرن | ✅ |
+| تم Dark Mode | ✅ |
+| نمایش تعداد پروژه‌های فعال | ✅ |
+| نمایش پروژه‌های تکمیل شده | ✅ |
+| دسته‌بندی پروژه‌ها | ✅ |
+| نمایش میزان استفاده از سرور | ✅ |
+| Progress Bar | ✅ |
+| Bottom Navigation | ✅ |
 | طراحی Responsive | ✅ |
-| کامپوننت‌های قابل استفاده مجدد | ✅ |
+| استفاده از Flexbox | ✅ |
 
 ---
 
-## 📱 صفحات پروژه
+## 📱 بخش‌های داشبورد
 
-- صفحه Home
-- دسته‌بندی محصولات
-- محصولات محبوب
-- محصول ویژه
-- سبد خرید
-- علاقه‌مندی‌ها
-- صفحه جزئیات محصول
-- Bottom Navigation
+### Header
+
+شامل:
+
+- Avatar کاربر
+- عنوان داشبورد
+- دکمه تنظیمات
+
+در بخش Header از ساختار Row برای قرار دادن عناصر کنار یکدیگر استفاده شده است.
 
 ---
 
-## 🛒 قابلیت‌های اپلیکیشن
+### Statistics Cards
 
-- نمایش محصولات
-- دسته‌بندی کالاها
-- نمایش قیمت
-- نمایش تخفیف
-- نمایش تصاویر محصولات
-- افزودن به سبد خرید
-- افزایش و کاهش تعداد کالا
-- علاقه‌مندی‌ها
-- نمایش مجموع خرید
-- دکمه تسویه حساب
+نمایش آمار پروژه‌ها:
+
+- تعداد پروژه‌های فعال
+- تعداد پروژه‌های تکمیل شده
+- درصد پیشرفت کلی
+- استفاده از سرور
+
+---
+
+## 📊 نمودارها و آمار
+
+- نمودار میله‌ای پروژه‌ها
+- نمودار دایره‌ای دسته‌بندی‌ها
+- شاخص پیشرفت سرور
 
 ---
 
@@ -79,44 +100,36 @@
 
 - **React Native**
 - **Expo SDK 57**
-- **JavaScript**
-- **Expo Router**
+- **JavaScript (ES6+)**
 - **React Hooks**
 - **JSX**
 - **StyleSheet**
+- **Flexbox**
 
 ---
 
 ## 📂 ساختار پروژه
 
 ```text
-shop-app
+project-dashboard
 
 ├── app
 
 ├── src
 │   ├── components
+│   │   ├── Header.jsx
+│   │   ├── StatisticsCards.jsx
+│   │   ├── ProjectCategory.jsx
+│   │   ├── ServerCapacity.jsx
+│   │   ├── ProgressBar.jsx
+│   │   └── BottomNavigation.jsx
 │
-│   ├── home
-│   │   ├── HomeHeader.jsx
-│   │   ├── ProductCard.jsx
-│   │   ├── PopularProductCard.jsx
-│   │   ├── CategorySection.jsx
-│   │   ├── ProductOfDaySection.jsx
+│   ├── constants
+│   │   └── colors.js
 │
-│   ├── cart
-│   │   ├── CartHeader.jsx
-│   │   ├── CartItemCard.jsx
-│   │   ├── QuantityControl.jsx
-│   │   ├── CartSummary.jsx
-│   │   └── CheckoutBar.jsx
-│
-│   ├── favorite
-│   │   └── FavoriteProductCard.jsx
-│
-│   └── navigation
-│       └── BottomNav.jsx
-│
+│   └── data
+│       └── dashboardData.js
+
 ├── assets
 
 ├── package.json
@@ -126,22 +139,35 @@ shop-app
 
 ---
 
+## 🧩 کامپوننت‌های پروژه
+
+| Component | توضیح |
+|------------|-------|
+| Header | نمایش آواتار، عنوان و دکمه تنظیمات |
+| StatisticsCards | کارت‌های آماری |
+| ProjectCategory | دسته‌بندی پروژه‌ها |
+| ServerCapacity | ظرفیت سرور |
+| ProgressBar | نوار پیشرفت |
+| BottomNavigation | منوی ناوبری پایین صفحه |
+
+---
+
 ## 🚀 ساخت پروژه جدید
 
 ```bash
 npx create-expo-app@latest
 ```
 
-یا
+یا:
 
 ```bash
-npx create-expo-app@latest shop-app
+npx create-expo-app@latest project-dashboard
 ```
 
 ورود به پروژه:
 
 ```bash
-cd shop-app
+cd project-dashboard
 ```
 
 ---
@@ -163,11 +189,11 @@ cd shop-app
 
 ## ⚙ راه‌اندازی محیط توسعه
 
-برای نصب صحیح React Native از مستندات رسمی استفاده کنید.
+برای نصب صحیح React Native از مستندات رسمی استفاده کنید:
 
 🔗 [https://reactnative.dev/docs/set-up-your-environment](https://reactnative.dev/docs/set-up-your-environment)
 
-در این مستند نحوه نصب موارد زیر آموزش داده شده است:
+در این مستند نحوه نصب موارد زیر توضیح داده شده است:
 
 - Android Studio
 - Android SDK
@@ -175,7 +201,6 @@ cd shop-app
 - Environment Variables
 - Android Emulator
 - اجرای پروژه روی موبایل
-- اجرای پروژه روی شبیه‌ساز
 
 ---
 
@@ -189,7 +214,7 @@ cd shop-app
 
 ## 📦 دانلود آفلاین Android SDK
 
-اگر هنگام دانلود Emulator یا System Image با خطا مواجه شدید، فایل‌های آفلاین را از لینک زیر دریافت کنید.
+اگر هنگام دانلود Emulator یا System Image با مشکل مواجه شدید:
 
 🔗 [https://androidsdkoffline.blogspot.com/p/android-sysimg-gapi-playstore-ia-x64.html?m=1](https://androidsdkoffline.blogspot.com/p/android-sysimg-gapi-playstore-ia-x64.html?m=1)
 
@@ -205,7 +230,7 @@ npm install
 
 ## ▶ اجرای پروژه
 
-### اجرای Development Server
+### شروع Development Server
 
 ```bash
 npx expo start
@@ -279,31 +304,13 @@ npx expo install package-name
 
 ---
 
-## 🧩 کامپوننت‌های پروژه
-
-| Component | توضیح |
-|------------|-------|
-| HomeHeader | هدر صفحه اصلی |
-| CategorySection | دسته‌بندی محصولات |
-| ProductCard | کارت محصول |
-| PopularProductCard | محصولات محبوب |
-| ProductOfDaySection | محصول ویژه روز |
-| CartHeader | هدر سبد خرید |
-| CartItemCard | آیتم سبد خرید |
-| QuantityControl | کنترل تعداد کالا |
-| CartSummary | خلاصه خرید |
-| CheckoutBar | دکمه تسویه حساب |
-| FavoriteProductCard | محصولات علاقه‌مندی |
-| BottomNav | منوی پایین برنامه |
-
----
-
 ## 🎯 اهداف آموزشی پروژه
 
 در این پروژه با مفاهیم زیر آشنا خواهید شد:
 
 - React Native
 - Expo
+- JavaScript
 - JSX
 - Component
 - Props
@@ -313,32 +320,30 @@ npx expo install package-name
 - StyleSheet
 - View
 - Text
-- Image
 - ScrollView
-- FlatList
+- SafeAreaView
 - TouchableOpacity
-- طراحی رابط کاربری
-- مدیریت State
+- Flexbox
+- طراحی UI داشبورد
+- مدیریت Layout
 - معماری پروژه
-- طراحی فروشگاه اینترنتی
 - ساخت کامپوننت‌های قابل استفاده مجدد
+- طراحی Responsive
 
 ---
 
 ## 🚀 توسعه‌های آینده
 
 - [ ] اتصال به API
-- [ ] احراز هویت کاربران
-- [ ] ثبت سفارش
-- [ ] پرداخت آنلاین
-- [ ] جستجوی محصولات
-- [ ] فیلتر کالاها
-- [ ] دسته‌بندی پیشرفته
-- [ ] تاریخچه سفارش‌ها
-- [ ] علاقه‌مندی‌ها
+- [ ] دریافت داده‌های واقعی
+- [ ] نمودارهای پیشرفته
+- [ ] حالت Light Mode
 - [ ] اعلان‌ها
-- [ ] پروفایل کاربری
-- [ ] حالت Dark Mode
+- [ ] صفحه جزئیات پروژه
+- [ ] ویرایش پروژه
+- [ ] حالت آفلاین
+- [ ] چندزبانه
+- [ ] انیمیشن‌های پیشرفته
 
 ---
 
@@ -356,7 +361,7 @@ npx expo start -c
 npm install
 ```
 
-یا
+یا:
 
 ```bash
 rm -rf node_modules
@@ -409,3 +414,4 @@ npm install
 ساخته شده با ❤️ توسط **React Native + Expo**
 
 </div>
+
